@@ -30,7 +30,7 @@ def main():
     pre_score = st.text_input("previous score", "Type Here")
     result=""
     if st.button("Predict"):
-        result=predict_std_perf(hour_s, pre_scor)
+        result=predict_std_perf(hour_s, pre_score)
     st.success('The output is {}'.format(result))
     if st.button("About"):
         st.text("Lets Learn Python")
